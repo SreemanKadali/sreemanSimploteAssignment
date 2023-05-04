@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/31b34c12c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav-bar">
+
+        <i class="fa-solid fa-bars menu" onclick="menuClicked()"></i>
+        <ul class="nav-items nav-items-display" id="nav-items-id">
+            <li>
+                <a href="#" class="item"> Home</a>
+            </li>
+            <li>
+                <a href="#order-container-id" class="item">Order</a>
+            </li>
+            <li>
+                <a href="#" class="item">Food</a>
+            </li>
+            <li>
+                <a href="#" class="item">Restaurant</a>
+            </li>
+            <li>
+                <a href="#" class="item">Testimonials</a>
+            </li>
+            <li>
+                <a href="#" class="item">Contact Us</a>
+            </li>
+
+        </ul>
+        <div class="icon-items">
+            <i class="fa-solid fa-phone icon"></i>
+            <i class="fa-solid fa-cart-shopping icon"></i>
+        </div>
+
+    </div>
+    <div class="banner">
+        <div class="card">
+            <h1 class="banner-heading">LOREM IPSUM</h1>
+            <p class="">Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took
+                a galley of type and scrambled it to make a type
+                specimen book.
+            </p>
+        </div>
+    </div>
+    <div class="order-items-container" id="order-container-id">
+        <h1 class="order-heading">Order Now</h1>
+        <div class="items-present">
+            <div class=" order-card">
+                <div class="item-image burger"></div>
+                <!-- <img class="" src="" alt="burger-image" /> -->
+                <h3 class="item-heading">BURGER</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class=" order-card ">
+                <div class="item-image pizza"></div>
+                <!-- <img class="item-image" src="" alt="pizza-image" /> -->
+                <h3 class="item-heading">PIZZA</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class=" order-card ">
+                <div class="item-image pasta"></div>
+                <!-- <img class="item-image" src="https://res.cloudinary.com/ddbvitiyx/image/upload/v1683194432/img3_dcrwet.jpg" alt="burger-image" /> -->
+                <h3 class="item-heading">PASTA</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+        </div>
+        <div class="">
+            <button class="btn">Order</button>
+        </div>
+
+    </div>
+
+    <script>
+        function menuClicked() {
+            const menu = document.getElementById("nav-items-id");
+            menu.classList.toggle("nav-items-display")
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
